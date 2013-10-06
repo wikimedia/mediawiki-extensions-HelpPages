@@ -2,15 +2,16 @@
 
 class HelpPages {
 
+	static $apiurl = 'https://www.mediawiki.org/w/api.php';
+
 	/**
 	 * Makes an API request to mediawiki.org
 	 * @param $params array
 	 * @return array
 	 */
 	public static function makeAPIRequest( $params ) {
-		global $wgHelpPagesAPI;
 		$params['format'] = 'json';
-		$url = wfAppendQuery( $wgHelpPagesAPI, $params );
+		$url = wfAppendQuery( self::$apiurl, $params );
 		$req = MWHttpRequest::factory( $url );
 		$req->execute();
 		$json = $req->getContent();

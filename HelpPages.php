@@ -23,11 +23,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  */
 $wgHelpPagesExpiry = 60 * 60 * 24 * 7;
 
-/**
- * API url to get help pages from
- */
-$wgHelpPagesAPI = 'https://www.mediawiki.org/w/api.php';
-
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'HelpPages',
