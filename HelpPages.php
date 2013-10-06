@@ -1,5 +1,6 @@
 <?php
-/* HelpPages extension
+/*
+ * HelpPages extension
  * Fetches help pages from mediawiki.org if they
  * don't exist locally
  *
