@@ -5,5 +5,5 @@ HelpPages is a [MediaWiki](https://www.mediawiki.org) extension that will automa
 ## TODO
 * Automatically download remote CSS to make things display properly
 * Allow users to locally modify the page (like how the MediaWiki namespace works)
-* Let action=purge clear the cache
+* Show up in search results
 * Finish writing this README

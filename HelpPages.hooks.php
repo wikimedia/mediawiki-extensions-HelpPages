@@ -21,4 +21,17 @@ class HelpPagesHooks {
 		}
 		return true;
 	}
+
+	/**
+	 * Use action=purge to clear cache
+	 * @param $article Article
+	 * @return bool
+	 */
+	public static function onArticlePurge( &$article ) {
+		global $wgLanguageCode, $wgMemc;
+		$title = $article->getContext()->getTitle();
+		$key = wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
+		$wgMemc->delete( $key );
+		return true;
+	}
 }
