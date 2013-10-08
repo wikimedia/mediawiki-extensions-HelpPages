@@ -24,3 +24,5 @@ $messages['qqq'] = array(
 	'helppages-desc' => '{{desc|name=Help Pages|url=http://www.mediawiki.org/wiki/Extension:HelpPages}}',
 	'helppages-notice' => 'Message shown above help pages from mediawiki.org, $1 is the revision id of the page that was fetched',
 );
+
+
