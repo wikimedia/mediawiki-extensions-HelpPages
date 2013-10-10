@@ -67,6 +67,14 @@ $messages['ja'] = array(
 	'helppages-notice' => 'このページは [//www.mediawiki.org/?oldid=$1 mediawiki.org] からダウンロードされたため、mediawiki.org で編集できます。',
 );
 
+/** Korean (한국어)
+ * @author Hym411
+ */
+$messages['ko'] = array(
+	'helppages-desc' => '[//www.mediawiki.org 미디어위키.org] 에서 자동으로 도움말을 불러옵니다',
+	'helppages-notice' => '이 페이지는 [//www.mediawiki.org/?oldid=$1 미디어위키.org]에서 다운로드 되었으며 그곳에서 편집할 수 있습니다.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
