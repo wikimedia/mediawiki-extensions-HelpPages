@@ -15,6 +15,7 @@ $messages = array();
 $messages['en'] = array(
 	'helppages-desc' => 'Automatically fetches help pages from [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'This page was downloaded from [//www.mediawiki.org/?oldid=$1 mediawiki.org] and can be edited there.',
+	'helppages-edit-tab' => 'Edit on MediaWiki.org',
 );
 
 /** Message documentation (Message documentation)
@@ -25,6 +26,7 @@ $messages['qqq'] = array(
 	'helppages-desc' => '{{desc|name=Help Pages|url=http://www.mediawiki.org/wiki/Extension:HelpPages}}',
 	'helppages-notice' => 'Message shown above help pages from mediawiki.org. Parameters:
 * $1 - the revision id of the page that was fetched',
+	'helppages-edit-tab' => 'Text on tab that replaces "create", and links to the edit interface on MediaWiki.org',
 );
 
 /** German (Deutsch)
