@@ -60,6 +60,7 @@ $messages['fr'] = array(
 $messages['gl'] = array(
 	'helppages-desc' => 'Busca automaticamente páxinas de axuda de [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Esta páxina descargouse de [//www.mediawiki.org/?oldid=$1 mediawiki.org] e pode editarse alí.',
+	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
 /** Italian (italiano)
@@ -103,6 +104,7 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'helppages-desc' => 'Автоматски презема страници за помош од [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Страницава е преземена од [//www.mediawiki.org/?oldid=$1 mediawiki.org] и може тука да се уредува.',
+	'helppages-edit-tab' => 'Уреди на MediaWiki.org',
 );
 
 /** Russian (русский)
