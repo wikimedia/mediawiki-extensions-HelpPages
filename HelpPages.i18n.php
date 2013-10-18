@@ -29,6 +29,13 @@ $messages['qqq'] = array(
 	'helppages-edit-tab' => 'Text on tab that replaces "create", and links to the edit interface on MediaWiki.org',
 );
 
+/** Bulgarian (български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'helppages-desc' => 'Автоматично извлича помощните страници от [//www.mediawiki.org mediawiki.org]',
+);
+
 /** Catalan (català)
  * @author Toniher
  */
@@ -124,4 +131,11 @@ $messages['uk'] = array(
 	'helppages-desc' => 'Автоматично витягує сторінки довідки з [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Ця сторінка була завантажена з [//www.mediawiki.org/?oldid=$1 mediawiki.org] і може бути відредагована.',
 	'helppages-edit-tab' => 'Редагувати на MediaWiki.org',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
+ */
+$messages['zh-hans'] = array(
+	'helppages-edit-tab' => '在MediaWiki.org上编辑',
 );
