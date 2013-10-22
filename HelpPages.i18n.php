@@ -29,6 +29,15 @@ $messages['qqq'] = array(
 	'helppages-edit-tab' => 'Text on tab that replaces "create", and links to the edit interface on MediaWiki.org',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'helppages-desc' => "Baxa automáticamente páxines d'ayuda de [//www.mediawiki.org mediawiki.org]",
+	'helppages-notice' => 'Esta páxina descargóse de [//www.mediawiki.org/?oldid=$1 mediawiki.org] y pue editase allí.',
+	'helppages-edit-tab' => 'Editar en MediaWiki.org',
+);
+
 /** Bulgarian (български)
  * @author DCLXVI
  */
