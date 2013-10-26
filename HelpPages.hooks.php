@@ -62,9 +62,9 @@ class HelpPagesHooks {
 	 * @return bool
 	 */
 	public static function onArticlePurge( &$article ) {
-		global $wgLanguageCode, $wgMemc;
+		global $wgMemc;
 		$title = $article->getContext()->getTitle();
-		$key = wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
+		$key = HelpPages::getCacheKey( $title );
 		$wgMemc->delete( $key );
 		return true;
 	}

@@ -20,6 +20,17 @@ class HelpPages {
 	}
 
 	/**
+	 * Get the cache key for a certain title
+	 *
+	 * @param Title|string $title
+	 * @return string
+	 */
+	public static function getCacheKey( $title ) {
+		global $wgLanguageCode;
+		return wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
+	}
+
+	/**
 	 * Use action=parse to get rendered HTML of a page
 	 * @param $title string
 	 * @return array
@@ -42,7 +53,7 @@ class HelpPages {
 	 */
 	public static function getPagePlusFallbacks( $title ) {
 		global $wgLanguageCode, $wgMemc, $wgHelpPagesExpiry;
-		$key = wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
+		$key = self::getCacheKey( $title );
 		$cached = $wgMemc->get( $key );
 		//$cached = false;
 		if ( $cached !== false ) {
