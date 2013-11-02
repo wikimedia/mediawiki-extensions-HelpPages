@@ -45,6 +45,15 @@ $messages['bg'] = array(
 	'helppages-desc' => 'Автоматично извлича помощните страници от [//www.mediawiki.org mediawiki.org]',
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'helppages-desc' => 'স্বয়ংক্রিয়ভাবে [//www.mediawiki.org mediawiki.org] থেকে সাহায্য পাতাগুলি নিয়ে আসে।',
+	'helppages-notice' => 'এই পাতাটি [//www.mediawiki.org/?oldid=$1 mediawiki.org] থেকে ডাউনলোড করা হয়েছে এবং সেখানে সম্পাদনা করা যাবে।',
+	'helppages-edit-tab' => 'MediaWiki.org সাইটে সম্পাদনা করুন',
+);
+
 /** Catalan (català)
  * @author Toniher
  */
@@ -59,6 +68,13 @@ $messages['de'] = array(
 	'helppages-desc' => 'Ermöglicht den automatischen Abruf von Hilfeseiten von [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Diese Seite wurde von [//www.mediawiki.org/?oldid=$1 mediawiki.org] heruntergeladen und kann dort bearbeitet werden.',
 	'helppages-edit-tab' => 'Auf MediaWiki.org bearbeiten',
+);
+
+/** Spanish (español)
+ * @author Benfutbol10
+ */
+$messages['es'] = array(
+	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
 /** French (français)
@@ -108,9 +124,10 @@ $messages['ko'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'helppages-desc' => 'Lued automatesch Hëllefssäite vun [//www.mediawiki.org mediawiki.org] erof',
+	'helppages-desc' => 'Luet automatesch Hëllefssäite vun [//www.mediawiki.org mediawiki.org] erof',
 	'helppages-notice' => 'Dës Säit gouf vu [//www.mediawiki.org/?oldid=$1 mediawiki.org] erofgelueden a kann do geännert ginn.',
 	'helppages-edit-tab' => 'Änneren op MediaWiki.org',
 );
@@ -122,6 +139,15 @@ $messages['mk'] = array(
 	'helppages-desc' => 'Автоматски презема страници за помош од [//www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Страницава е преземена од [//www.mediawiki.org/?oldid=$1 mediawiki.org] и може тука да се уредува.',
 	'helppages-edit-tab' => 'Уреди на MediaWiki.org',
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'helppages-desc' => 'Busca automaticamente páginas de ajuda de [//www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'Esta página foi obtida do endereço [//www.mediawiki.org/?oldid=$1 mediawiki.org] e pode ser editada lá.',
+	'helppages-edit-tab' => 'Editar em MediaWiki.org',
 );
 
 /** Russian (русский)
