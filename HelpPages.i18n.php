@@ -141,6 +141,15 @@ $messages['mk'] = array(
 	'helppages-edit-tab' => 'Уреди на MediaWiki.org',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'helppages-desc' => "Haalt automatisch hulppagina's op van [//www.mediawiki.org mediawiki.org]",
+	'helppages-notice' => 'Deze pagina is gedownload van [//www.mediawiki.org/?oldid=$1 mediawiki.org] en kan daar bewerkt worden.',
+	'helppages-edit-tab' => 'Bewerken op MediaWiki.org',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Cainamarques
  */
