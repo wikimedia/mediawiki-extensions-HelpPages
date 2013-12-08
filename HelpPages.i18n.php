@@ -179,8 +179,10 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Liuxinyu970226
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'helppages-desc' => '自动从[//www.mediawiki.org mediawiki.org]读取帮助页面',
 	'helppages-notice' => '本页面从[//www.mediawiki.org/?oldid=$1 mediawiki.org]下载并可以在此编辑。',
 	'helppages-edit-tab' => '在MediaWiki.org上编辑',
 );
