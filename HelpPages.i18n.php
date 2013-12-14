@@ -95,6 +95,15 @@ $messages['gl'] = array(
 	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
+/** Interlingue (Interlingue)
+ * @author Makuba
+ */
+$messages['ie'] = array(
+	'helppages-desc' => 'Automaticmen prender auxiliari págines de [//www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'Ti-ci págine ha esset prendet de [//www.mediawiki.org/?oldid=$1 mediawiki.org] e es redactibil ta.',
+	'helppages-edit-tab' => 'Redacter che MediaWiki.org',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
