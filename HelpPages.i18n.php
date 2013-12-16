@@ -95,6 +95,15 @@ $messages['gl'] = array(
 	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'helppages-desc' => 'Wotwołuje strony pomocy z  [//www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'Tuta strona je so z [//www.mediawiki.org/?oldid=$1 mediawiki.org] sćahnyła a da so tu wobdźěłać.',
+	'helppages-edit-tab' => 'Na MediaWiki.org wobdźěłać',
+);
+
 /** Interlingue (Interlingue)
  * @author Makuba
  */
