@@ -100,4 +100,9 @@ class HelpPages {
 		return false;
 	}
 
+	public static function helpPageExists( Title $title ) {
+		list( $text, /* $oldid */ ) = self::getPagePlusFallbacks( 'Help:' . $title->getText() );
+		return (bool)$text;
+	}
+
 }

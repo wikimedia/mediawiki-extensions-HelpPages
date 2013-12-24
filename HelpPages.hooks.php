@@ -28,29 +28,25 @@ class HelpPagesHooks {
 	 * @return bool
 	 */
 	public static function onSkinTemplateNavigationUniversal( &$sktemplate, &$links ) {
-		//var_dump($links);
 		$context = $sktemplate->getContext();
 		$title = $sktemplate->getTitle();
-		//var_dump($links);
-		if ( $title->getNamespace() == NS_HELP ) {
-			list ( $text, $oldid ) = HelpPages::getPagePlusFallbacks( 'Help:' . $title->getText() );
-			if ( $text ) {
-				$links['namespaces']['help']['class'] = 'selected';
-				$links['namespaces']['help_talk']['class'] = '';
-				$links['namespaces']['help_talk']['href'] = '//www.mediawiki.org/wiki/Help talk:' . $title->getText();
-				$links['views'] = array(); // Kill the 'Create' button @todo make this suck less
-				$links['views'][] = array(
-					'class' => false,
-					'text' => $context->msg( 'helppages-edit-tab' ),
-					'href' => wfAppendQuery(
-						'//www.mediawiki.org/w/index.php',
-						array(
-							'action' => 'edit',
-							'title' => $title->getPrefixedText()
-						)
+
+		if ( $title->getNamespace() == NS_HELP && HelpPages::helpPageExists( $title ) ) {
+			$links['namespaces']['help']['class'] = 'selected';
+			$links['namespaces']['help_talk']['class'] = '';
+			$links['namespaces']['help_talk']['href'] = '//www.mediawiki.org/wiki/Help talk:' . $title->getText();
+			$links['views'] = array(); // Kill the 'Create' button @todo make this suck less
+			$links['views'][] = array(
+				'class' => false,
+				'text' => $context->msg( 'helppages-edit-tab' ),
+				'href' => wfAppendQuery(
+					'//www.mediawiki.org/w/index.php',
+					array(
+						'action' => 'edit',
+						'title' => $title->getPrefixedText()
 					)
-				);
-			}
+				)
+			);
 		}
 		return true;
 	}
