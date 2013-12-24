@@ -9,7 +9,7 @@ class HelpPages {
 	 * @param $params array
 	 * @return array
 	 */
-	public static function makeAPIRequest( $params ) {
+	protected static function makeAPIRequest( $params ) {
 		$params['format'] = 'json';
 		$url = wfAppendQuery( self::$apiurl, $params );
 		$req = MWHttpRequest::factory( $url );
@@ -22,10 +22,10 @@ class HelpPages {
 	/**
 	 * Get the cache key for a certain title
 	 *
-	 * @param Title|string $title
+	 * @param string $title
 	 * @return string
 	 */
-	public static function getCacheKey( $title ) {
+	protected static function getCacheKey( $title ) {
 		global $wgLanguageCode;
 		return wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
 	}
@@ -43,7 +43,7 @@ class HelpPages {
 	 * @param $title string
 	 * @return array
 	 */
-	public static function parseWikiText( $title ) {
+	protected static function parseWikiText( $title ) {
 		$params = array(
 			'action' => 'parse',
 			'page' => $title
