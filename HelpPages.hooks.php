@@ -55,17 +55,13 @@ class HelpPagesHooks {
 		return true;
 	}
 
-
 	/**
 	 * Use action=purge to clear cache
-	 * @param $article Article
+	 * @param WikiPage $article
 	 * @return bool
 	 */
 	public static function onArticlePurge( &$article ) {
-		global $wgMemc;
-		$title = $article->getContext()->getTitle();
-		$key = HelpPages::getCacheKey( $title );
-		$wgMemc->delete( $key );
+		HelpPages::purgeCache( $article->getTitle() );
 		return true;
 	}
 }

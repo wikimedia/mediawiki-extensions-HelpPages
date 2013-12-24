@@ -31,6 +31,14 @@ class HelpPages {
 	}
 
 	/**
+	 * @param Title $title
+	 */
+	public static function purgeCache( Title $title ) {
+		global $wgMemc;
+		$wgMemc->delete( self::getCacheKey( $title->getPrefixedText() ) );
+	}
+
+	/**
 	 * Use action=parse to get rendered HTML of a page
 	 * @param $title string
 	 * @return array
