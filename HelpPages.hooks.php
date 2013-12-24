@@ -58,6 +58,18 @@ class HelpPagesHooks {
 	 */
 	public static function onArticlePurge( &$article ) {
 		HelpPages::purgeCache( $article->getTitle() );
+
+		return true;
+	}
+
+	/**
+	 * If the page "exists", make blue links
+	 */
+	public static function onLinkBegin( $dummy, Title $target, &$html, &$customAttribs, &$query, &$options, &$ret ) {
+		if ( $target->getNamespace() === NS_HELP && HelpPages::helpPageExists( $target ) ) {
+			$options = array( 'known' );
+		}
+
 		return true;
 	}
 }
