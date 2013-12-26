@@ -13,8 +13,8 @@ $messages = array();
  * @author Kunal Mehta
  */
 $messages['en'] = array(
-	'helppages-desc' => 'Automatically fetches help pages from [//www.mediawiki.org mediawiki.org]',
-	'helppages-notice' => 'This page was downloaded from [//www.mediawiki.org/?oldid=$1 mediawiki.org] and can be edited there.',
+	'helppages-desc' => 'Automatically fetches help pages from [https://www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'This page was downloaded from [https://www.mediawiki.org/?oldid=$1 mediawiki.org] and can be edited there.',
 	'helppages-edit-tab' => 'Edit on MediaWiki.org',
 );
 
