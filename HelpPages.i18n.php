@@ -23,7 +23,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'helppages-desc' => '{{desc|name=Help Pages|url=http://www.mediawiki.org/wiki/Extension:HelpPages}}',
+	'helppages-desc' => '{{desc|name=Help Pages|url=https://www.mediawiki.org/wiki/Extension:HelpPages}}',
 	'helppages-notice' => 'Message shown above help pages from mediawiki.org. Parameters:
 * $1 - the revision id of the page that was fetched',
 	'helppages-edit-tab' => 'Text on tab that replaces "create", and links to the edit interface on MediaWiki.org',
@@ -59,6 +59,14 @@ $messages['bn'] = array(
  */
 $messages['ca'] = array(
 	'helppages-edit-tab' => 'Modifica a MediaWiki.org',
+);
+
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'helppages-desc' => '[https://www.mediawiki.org mediawiki.org] чура автоматически агӀонаш схьайоху',
+	'helppages-notice' => 'ХӀара агӀо хӀокху [https://www.mediawiki.org/?oldid=$1 mediawiki.org] чура сехьаяьккхина ю хӀинца и тая йиш ю.',
 );
 
 /** German (Deutsch)
