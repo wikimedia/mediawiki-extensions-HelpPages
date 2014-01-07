@@ -85,6 +85,14 @@ $messages['es'] = array(
 	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'helppages-notice' => 'این صفحه از [https://www.mediawiki.org/?oldid=$1 mediawiki.org] دریافت شده و می‌تواند آنجا ویرایش شود.',
+	'helppages-edit-tab' => 'ویرایش در MediaWiki.org',
+);
+
 /** French (français)
  * @author Gomoko
  */
