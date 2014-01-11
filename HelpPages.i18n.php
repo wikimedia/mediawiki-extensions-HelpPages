@@ -184,6 +184,15 @@ $messages['nl'] = array(
 	'helppages-edit-tab' => 'Bewerken op MediaWiki.org',
 );
 
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'helppages-desc' => 'Automatycznie pobiera strony pomocy z [https://www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'Ta strona została pobrana z [https://www.mediawiki.org/?oldid=$1 mediawiki.org] i można ją edytować.',
+	'helppages-edit-tab' => 'Edycja na MediaWiki.org',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Cainamarques
  */
