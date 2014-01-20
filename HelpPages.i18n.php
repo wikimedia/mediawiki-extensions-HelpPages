@@ -89,6 +89,7 @@ $messages['es'] = array(
  * @author Armin1392
  */
 $messages['fa'] = array(
+	'helppages-desc' => 'آوردن صفحات کمکی به طور خودکار از [https://www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'این صفحه از [https://www.mediawiki.org/?oldid=$1 mediawiki.org] دریافت شده و می‌تواند آنجا ویرایش شود.',
 	'helppages-edit-tab' => 'ویرایش در MediaWiki.org',
 );
