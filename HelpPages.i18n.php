@@ -54,6 +54,13 @@ $messages['bn'] = array(
 	'helppages-edit-tab' => 'MediaWiki.org সাইটে সম্পাদনা করুন',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'helppages-notice' => 'Pellgarget e oa bet ar bajenn-mañ diwar [https://www.mediawiki.org/?oldid=$1 mediawiki.org] ha gallout a ra bezañ aozet eno.',
+);
+
 /** Catalan (català)
  * @author Toniher
  */
