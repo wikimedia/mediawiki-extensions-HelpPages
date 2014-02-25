@@ -119,6 +119,15 @@ $messages['gl'] = array(
 	'helppages-edit-tab' => 'Editar en MediaWiki.org',
 );
 
+/** Hebrew (עברית)
+ * @author Yona b
+ */
+$messages['he'] = array(
+	'helppages-desc' => 'תקציר אוטומטי של דפי עזרה מ־[https://www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'דף זה הורד מ־[https://www.mediawiki.org/?oldid=$1 mediawiki.org] וניתן לערוך אותו כאן.',
+	'helppages-edit-tab' => 'ערוך ב־MediaWiki.org',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
