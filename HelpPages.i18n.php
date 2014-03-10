@@ -210,6 +210,15 @@ $messages['pl'] = array(
 	'helppages-edit-tab' => 'Edycja na MediaWiki.org',
 );
 
+/** Portuguese (português)
+ * @author Hamilton Abreu
+ */
+$messages['pt'] = array(
+	'helppages-desc' => 'Obtém automaticamente páginas de ajuda da [https://www.mediawiki.org mediawiki.org]',
+	'helppages-notice' => 'Esta página foi obtida da [https://www.mediawiki.org/?oldid=$1 mediawiki.org] e pode ser editada lá.',
+	'helppages-edit-tab' => 'Editar na MediaWiki.org',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Cainamarques
  */
