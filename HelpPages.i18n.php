@@ -201,6 +201,13 @@ $messages['nl'] = array(
 	'helppages-edit-tab' => 'Bewerken op MediaWiki.org',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'helppages-desc' => 'Extrai automaticament las paginas d’ajuda de [https://www.mediawiki.org mediawiki.org]',
+);
+
 /** Polish (polski)
  * @author Chrumps
  */
