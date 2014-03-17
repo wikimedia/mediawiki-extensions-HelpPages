@@ -250,6 +250,7 @@ $messages['ru'] = array(
 $messages['sv'] = array(
 	'helppages-desc' => 'Hämtar automatiskt hjälpsidor från [https://www.mediawiki.org mediawiki.org]',
 	'helppages-notice' => 'Denna sida laddades ned från [https://www.mediawiki.org/?oldid=$1 mediawiki.org] och kan redigeras där.',
+	'helppages-edit-tab' => 'Redigera på MediaWiki.org',
 );
 
 /** Ukrainian (українська)
