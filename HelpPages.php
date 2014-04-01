@@ -29,7 +29,7 @@ $wgExtensionCredits['other'][] = array(
 	'author' => 'Kunal Mehta',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:HelpPages',
 	'descriptionmsg' => 'helppages-desc',
-	'version' => '0.2',
+	'version' => '0.3.0',
 );
 
 $dir = dirname(__FILE__);
@@ -37,6 +37,7 @@ $dir = dirname(__FILE__);
 $wgAutoloadClasses['HelpPages'] = $dir . '/HelpPages.body.php';
 $wgAutoloadClasses['HelpPagesHooks'] = $dir . '/HelpPages.hooks.php';
 
+$wgMessagesDirs['HelpPages'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['HelpPages'] = "$dir/HelpPages.i18n.php";
 
 $wgHooks['ShowMissingArticle'][] = 'HelpPagesHooks::onShowMissingArticle';
