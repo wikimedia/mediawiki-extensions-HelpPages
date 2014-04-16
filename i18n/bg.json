@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "DCLXVI"
-        ]
-    },
-    "helppages-desc": "Автоматично извлича помощните страници от [https://www.mediawiki.org mediawiki.org]"
+	"@metadata": {
+		"authors": [
+			"DCLXVI"
+		]
+	},
+	"helppages-desc": "Автоматично извлича помощните страници от [https://www.mediawiki.org mediawiki.org]"
 }
