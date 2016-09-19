@@ -5,5 +5,6 @@
 		]
 	},
 	"helppages-desc": "Аўтаматычна атрымлівае старонкі дапамогі з [https://www.mediawiki.org mediawiki.org]",
+	"helppages-notice": "Гэтая старонка загружаная з [https://www.mediawiki.org/?oldid=$1 mediawiki.org] і можа быць зьмененая там.",
 	"helppages-edit-tab": "Рэдагаваць на MediaWiki.org"
 }
