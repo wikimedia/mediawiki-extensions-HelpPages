@@ -38,7 +38,6 @@ $wgAutoloadClasses['HelpPages'] = $dir . '/HelpPages.body.php';
 $wgAutoloadClasses['HelpPagesHooks'] = $dir . '/HelpPages.hooks.php';
 
 $wgMessagesDirs['HelpPages'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['HelpPages'] = "$dir/HelpPages.i18n.php";
 
 $wgHooks['ShowMissingArticle'][] = 'HelpPagesHooks::onShowMissingArticle';
 $wgHooks['SkinTemplateNavigation::Universal'][] = 'HelpPagesHooks::onSkinTemplateNavigationUniversal';
