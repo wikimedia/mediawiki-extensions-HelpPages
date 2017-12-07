@@ -56,7 +56,7 @@ class HelpPagesHooks {
 	 * @param WikiPage $article
 	 * @return bool
 	 */
-	public static function onArticlePurge( &$article ) {
+	public static function onArticlePurge( WikiPage &$article ) {
 		HelpPages::purgeCache( $article->getTitle() );
 
 		return true;
