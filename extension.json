@@ -6,6 +6,9 @@
 	"descriptionmsg": "helppages-desc",
 	"license-name": "Unlicense",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"MessagesDirs": {
 		"HelpPages": [
 			"i18n"
