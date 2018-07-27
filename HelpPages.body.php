@@ -63,7 +63,7 @@ class HelpPages {
 		global $wgLanguageCode, $wgMemc, $wgHelpPagesExpiry;
 		$key = self::getCacheKey( $title );
 		$cached = $wgMemc->get( $key );
-		//$cached = false;
+		// $cached = false;
 		if ( $cached !== false ) {
 			return $cached;
 		}
