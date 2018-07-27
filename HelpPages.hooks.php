@@ -35,18 +35,18 @@ class HelpPagesHooks {
 			$links['namespaces']['help']['class'] = 'selected';
 			$links['namespaces']['help_talk']['class'] = '';
 			$links['namespaces']['help_talk']['href'] = '//www.mediawiki.org/wiki/Help talk:' . $title->getText();
-			$links['views'] = array(); // Kill the 'Create' button @todo make this suck less
-			$links['views'][] = array(
+			$links['views'] = []; // Kill the 'Create' button @todo make this suck less
+			$links['views'][] = [
 				'class' => false,
 				'text' => $context->msg( 'helppages-edit-tab' ),
 				'href' => wfAppendQuery(
 					'//www.mediawiki.org/w/index.php',
-					array(
+					[
 						'action' => 'edit',
 						'title' => $title->getPrefixedText()
-					)
+					]
 				)
-			);
+			];
 		}
 		return true;
 	}
@@ -67,7 +67,7 @@ class HelpPagesHooks {
 	 */
 	public static function onLinkBegin( $dummy, Title $target, &$html, &$customAttribs, &$query, &$options, &$ret ) {
 		if ( $target->getNamespace() === NS_HELP && HelpPages::helpPageExists( $target ) ) {
-			$options = array( 'known' );
+			$options = [ 'known' ];
 		}
 
 		return true;

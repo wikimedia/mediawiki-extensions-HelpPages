@@ -44,14 +44,14 @@ class HelpPages {
 	 * @return array
 	 */
 	protected static function parseWikiText( $title ) {
-		$params = array(
+		$params = [
 			'action' => 'parse',
 			'page' => $title
-		);
+		];
 		$data = self::makeAPIRequest( $params );
 		$parsed = $data['parse']['text']['*'];
 		$oldid = $data['parse']['revid'];
-		return array( $parsed, $oldid );
+		return [ $parsed, $oldid ];
 	}
 
 	/**
@@ -69,7 +69,7 @@ class HelpPages {
 		}
 		$fallbacks = Language::getFallbacksFor( $wgLanguageCode );
 		array_unshift( $fallbacks, $wgLanguageCode );
-		$titles = array();
+		$titles = [];
 		foreach ( $fallbacks as $langCode ) {
 			if ( $langCode === 'en' ) {
 				$titles[$title] = $langCode;
@@ -77,12 +77,12 @@ class HelpPages {
 				$titles[$title . '/' . $langCode] = $langCode;
 			}
 		}
-		$params = array(
+		$params = [
 			'action' => 'query',
 			'titles' => implode( '|', array_keys( $titles ) )
-		);
+		];
 		$data = self::makeAPIRequest( $params );
-		$pages = array();
+		$pages = [];
 		foreach ( $data['query']['pages'] as /* $id => */ $info ) {
 			if ( isset( $info['missing'] ) ) {
 				continue;
