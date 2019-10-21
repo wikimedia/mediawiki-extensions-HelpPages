@@ -31,7 +31,7 @@
 		"ShowMissingArticle": "HelpPagesHooks::onShowMissingArticle",
 		"SkinTemplateNavigation::Universal": "HelpPagesHooks::onSkinTemplateNavigationUniversal",
 		"ArticlePurge": "HelpPagesHooks::onArticlePurge",
-		"LinkBegin": "HelpPagesHooks::onLinkBegin"
+		"HtmlPageLinkRendererBegin": "HelpPagesHooks::onHtmlPageLinkRendererBegin"
 	},
 	"config": {
 		"HelpPagesExpiry": {

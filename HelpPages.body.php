@@ -100,8 +100,8 @@ class HelpPages {
 		return false;
 	}
 
-	public static function helpPageExists( Title $title ) {
-		list( $text, /* $oldid */ ) = self::getPagePlusFallbacks( 'Help:' . $title->getText() );
+	public static function helpPageExists( LinkTarget $target ) {
+		list( $text, /* $oldid */ ) = self::getPagePlusFallbacks( 'Help:' . $target->getText() );
 		return (bool)$text;
 	}
 

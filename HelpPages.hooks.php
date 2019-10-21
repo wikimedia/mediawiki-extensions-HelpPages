@@ -64,10 +64,18 @@ class HelpPagesHooks {
 
 	/**
 	 * If the page "exists", make blue links
+	 *
+	 * @param LinkRenderer $linkRenderer
+	 * @param LinkTarget $target
+	 * @param HtmlArmor|string|null &$text
+	 * @param array &$customAttribs
+	 * @param array &$query
+	 * @param mixed &$ret
 	 */
-	public static function onLinkBegin( $dummy, Title $target, &$html, &$customAttribs, &$query, &$options, &$ret ) {
+	public static function onHtmlPageLinkRendererBegin( $linkRenderer, $target, &$text, &$customAttribs, &$query, &$ret ) {
 		if ( $target->getNamespace() === NS_HELP && HelpPages::helpPageExists( $target ) ) {
-			$options = [ 'known' ];
+			$ret = $linkRenderer->makeKnownLink( $target, $text, $customAttribs, $query );
+			return false;
 		}
 
 		return true;
