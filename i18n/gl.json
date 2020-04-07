@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"helppages-desc": "Procura automaticamente páxinas de axuda de [https://www.mediawiki.org mediawiki.org]",
