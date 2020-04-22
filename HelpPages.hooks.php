@@ -23,8 +23,8 @@ class HelpPagesHooks {
 	}
 
 	/**
-	 * @param SkinTemplate $sktemplate
-	 * @param array $links
+	 * @param SkinTemplate &$sktemplate
+	 * @param array &$links
 	 * @return bool
 	 */
 	public static function onSkinTemplateNavigationUniversal( &$sktemplate, &$links ) {
@@ -53,7 +53,7 @@ class HelpPagesHooks {
 
 	/**
 	 * Use action=purge to clear cache
-	 * @param WikiPage $article
+	 * @param WikiPage &$article
 	 * @return bool
 	 */
 	public static function onArticlePurge( WikiPage &$article ) {
