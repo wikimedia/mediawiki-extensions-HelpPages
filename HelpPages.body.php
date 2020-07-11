@@ -6,7 +6,7 @@ class HelpPages {
 
 	/**
 	 * Makes an API request to mediawiki.org
-	 * @param $params array
+	 * @param array $params
 	 * @return array
 	 */
 	protected static function makeAPIRequest( $params ) {
@@ -40,7 +40,7 @@ class HelpPages {
 
 	/**
 	 * Use action=parse to get rendered HTML of a page
-	 * @param $title string
+	 * @param string $title
 	 * @return array
 	 */
 	protected static function parseWikiText( $title ) {
@@ -56,7 +56,7 @@ class HelpPages {
 
 	/**
 	 * Get the page text in the content language or a fallback
-	 * @param $title string page name
+	 * @param string $title page name
 	 * @return string|bool false if couldn't be found
 	 */
 	public static function getPagePlusFallbacks( $title ) {

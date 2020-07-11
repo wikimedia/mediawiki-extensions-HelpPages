@@ -2,7 +2,7 @@
 
 class HelpPagesHooks {
 	/**
-	 * @param $article Article
+	 * @param Article $article
 	 * @return bool
 	 */
 	public static function onShowMissingArticle( $article ) {
@@ -71,6 +71,7 @@ class HelpPagesHooks {
 	 * @param array &$customAttribs
 	 * @param array &$query
 	 * @param mixed &$ret
+	 * @return bool
 	 */
 	public static function onHtmlPageLinkRendererBegin( $linkRenderer, $target, &$text, &$customAttribs, &$query, &$ret ) {
 		if ( $target->getNamespace() === NS_HELP && HelpPages::helpPageExists( $target ) ) {
