@@ -27,15 +27,14 @@ class HelpPages {
 	 */
 	protected static function getCacheKey( $title ) {
 		global $wgLanguageCode;
-		return wfMemcKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
+		return ObjectCache::getLocalClusterInstance()->makeKey( 'helppages', $wgLanguageCode, md5( $title ), 'v2' );
 	}
 
 	/**
 	 * @param Title $title
 	 */
 	public static function purgeCache( Title $title ) {
-		global $wgMemc;
-		$wgMemc->delete( self::getCacheKey( $title->getPrefixedText() ) );
+		ObjectCache::getLocalClusterInstance()->delete( self::getCacheKey( $title->getPrefixedText() ) );
 	}
 
 	/**
@@ -60,9 +59,10 @@ class HelpPages {
 	 * @return string|bool false if couldn't be found
 	 */
 	public static function getPagePlusFallbacks( $title ) {
-		global $wgLanguageCode, $wgMemc, $wgHelpPagesExpiry;
+		global $wgLanguageCode, $wgHelpPagesExpiry;
+		$cache = ObjectCache::getLocalClusterInstance();
 		$key = self::getCacheKey( $title );
-		$cached = $wgMemc->get( $key );
+		$cached = $cache->get( $key );
 		// $cached = false;
 		if ( $cached !== false ) {
 			return $cached;
@@ -93,7 +93,7 @@ class HelpPages {
 		foreach ( $fallbacks as $langCode ) {
 			if ( isset( $pages[$langCode] ) ) {
 				$html = self::parseWikiText( $pages[$langCode] );
-				$wgMemc->set( $key, $html, $wgHelpPagesExpiry );
+				$cache->set( $key, $html, $wgHelpPagesExpiry );
 				return $html;
 			}
 		}
