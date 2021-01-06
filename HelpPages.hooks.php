@@ -73,7 +73,9 @@ class HelpPagesHooks {
 	 * @param mixed &$ret
 	 * @return bool
 	 */
-	public static function onHtmlPageLinkRendererBegin( $linkRenderer, $target, &$text, &$customAttribs, &$query, &$ret ) {
+	public static function onHtmlPageLinkRendererBegin(
+		$linkRenderer, $target, &$text, &$customAttribs, &$query, &$ret
+	) {
 		if ( $target->getNamespace() === NS_HELP && HelpPages::helpPageExists( $target ) ) {
 			$ret = $linkRenderer->makeKnownLink( $target, $text, $customAttribs, $query );
 			return false;

@@ -2,7 +2,8 @@
 
 class HelpPages {
 
-	static $apiurl = 'https://www.mediawiki.org/w/api.php';
+	/** @var string */
+	private static $apiurl = 'https://www.mediawiki.org/w/api.php';
 
 	/**
 	 * Makes an API request to mediawiki.org
@@ -100,6 +101,10 @@ class HelpPages {
 		return false;
 	}
 
+	/**
+	 * @param LinkTarget $target
+	 * @return bool
+	 */
 	public static function helpPageExists( LinkTarget $target ) {
 		list( $text, /* $oldid */ ) = self::getPagePlusFallbacks( 'Help:' . $target->getText() );
 		return (bool)$text;
