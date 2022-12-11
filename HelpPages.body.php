@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class HelpPages {
 
 	/** @var string */
@@ -13,7 +15,7 @@ class HelpPages {
 	protected static function makeAPIRequest( $params ) {
 		$params['format'] = 'json';
 		$url = wfAppendQuery( self::$apiurl, $params );
-		$req = MWHttpRequest::factory( $url );
+		$req = MediaWikiServices::getInstance()->getHttpRequestFactory()->create( $url );
 		$req->execute();
 		$json = $req->getContent();
 		$decoded = FormatJson::decode( $json, true );
