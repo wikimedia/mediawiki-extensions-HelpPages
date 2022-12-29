@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class HelpPages {
 
 	/** @var string */
@@ -68,7 +70,12 @@ class HelpPages {
 		if ( $cached !== false ) {
 			return $cached;
 		}
-		$fallbacks = Language::getFallbacksFor( $wgLanguageCode );
+		if ( method_exists( MediaWikiServices::class, 'getLanguageFallback' ) ) {
+			// MW 1.35+
+			$fallbacks = MediaWikiServices::getInstance()->getLanguageFallback()->getAll( $wgLanguageCode );
+		} else {
+			$fallbacks = Language::getFallbacksFor( $wgLanguageCode );
+		}
 		array_unshift( $fallbacks, $wgLanguageCode );
 		$titles = [];
 		foreach ( $fallbacks as $langCode ) {
