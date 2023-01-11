@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"helppages-desc": "Samodejno pridobi strani pomoči iz [https://www.mediawiki.org mediawiki.org]",
+	"helppages-notice": "Ta stran je bila prenesena iz [https://www.mediawiki.org/?oldid= $1 mediawiki.org] in jo lahko tam urejate.",
+	"helppages-edit-tab": "Uredi na MediaWiki.org"
+}
