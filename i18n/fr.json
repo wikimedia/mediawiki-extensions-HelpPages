@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Verdy p"
 		]
 	},
-	"helppages-desc": "Extrait automatiquement les pages d’aide de [https://www.mediawiki.org mediawiki.org]",
+	"helppages-desc": "Extrait automatiquement les pages d’aide depuis [https://www.mediawiki.org/ mediawiki.org].",
 	"helppages-notice": "La page a été téléchargée depuis [https://www.mediawiki.org/?oldid=$1 mediawiki.org] et peut être modifiée ici.",
 	"helppages-edit-tab": "Modifier sur MediaWiki.org"
 }
