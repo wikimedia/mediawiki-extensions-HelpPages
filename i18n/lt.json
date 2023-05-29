@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"helppages-desc": "Automatiškai paima pagalbos puslapius iš [https://www.mediawiki.org mediawiki.org]",
+	"helppages-notice": "Šis puslapis buvo atsiųstas iš [https://www.mediawiki.org/?oldid= $1 mediawiki.org] ir gali būti redaguojamas ten.",
+	"helppages-edit-tab": "Redaguoti MediaWiki.org"
+}
