@@ -10,7 +10,7 @@ class HelpPagesHooks {
 		$output = $context->getOutput();
 		$title = $article->getTitle();
 		if ( $title->getNamespace() == NS_HELP ) {
-			list( $text, $oldid ) = HelpPages::getPagePlusFallbacks( 'Help:' . $title->getText() );
+			[ $text, $oldid ] = HelpPages::getPagePlusFallbacks( 'Help:' . $title->getText() );
 			if ( $text ) {
 				// Add a notice indicating that it was taken from mediawiki.org
 				$output->addHTML( $context->msg( 'helppages-notice', $oldid )->parse() );

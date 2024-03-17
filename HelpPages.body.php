@@ -113,7 +113,7 @@ class HelpPages {
 	 * @return bool
 	 */
 	public static function helpPageExists( LinkTarget $target ) {
-		list( $text, /* $oldid */ ) = self::getPagePlusFallbacks( 'Help:' . $target->getText() );
+		[ $text, /* $oldid */ ] = self::getPagePlusFallbacks( 'Help:' . $target->getText() );
 		return (bool)$text;
 	}
 
