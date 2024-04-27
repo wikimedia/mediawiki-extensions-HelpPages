@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Linker\LinkTarget;
+
 class HelpPages {
 
 	/** @var string */
