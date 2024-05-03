@@ -1,5 +1,8 @@
 <?php
 
+use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Linker\LinkTarget;
+
 class HelpPagesHooks {
 	/**
 	 * @param Article $article

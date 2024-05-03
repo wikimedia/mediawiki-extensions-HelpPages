@@ -60,7 +60,7 @@ class HelpPages {
 	/**
 	 * Get the page text in the content language or a fallback
 	 * @param string $title page name
-	 * @return string|bool false if couldn't be found
+	 * @return array|false false if couldn't be found
 	 */
 	public static function getPagePlusFallbacks( $title ) {
 		global $wgLanguageCode, $wgHelpPagesExpiry;
