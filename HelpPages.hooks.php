@@ -35,9 +35,9 @@ class HelpPagesHooks {
 		$title = $sktemplate->getTitle();
 
 		if ( $title->getNamespace() == NS_HELP && HelpPages::helpPageExists( $title ) ) {
-			$links['namespaces']['help']['class'] = 'selected';
-			$links['namespaces']['help_talk']['class'] = '';
-			$links['namespaces']['help_talk']['href'] = '//www.mediawiki.org/wiki/Help talk:' . $title->getText();
+			$links['associated-pages']['help']['class'] = 'selected';
+			$links['associated-pages']['help_talk']['class'] = '';
+			$links['associated-pages']['help_talk']['href'] = '//www.mediawiki.org/wiki/Help talk:' . $title->getText();
 			$links['views'] = []; // Kill the 'Create' button @todo make this suck less
 			$links['views'][] = [
 				'class' => false,
