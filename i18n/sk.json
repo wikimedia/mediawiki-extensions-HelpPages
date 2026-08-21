@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"helppages-desc": "Automaticky načítava stránky pomocníka z [https://www.mediawiki.org mediawiki.org]",
+	"helppages-notice": "Táto stránka bola prevzatá z [https://www.mediawiki.org/?oldid=$1 mediawiki.org] a upraviť ju možno tam.",
+	"helppages-edit-tab": "Upraviť na MediaWiki.org"
+}
